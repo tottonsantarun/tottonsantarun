@@ -23,6 +23,8 @@ params:
   Sections:
     - about
     - location
+    - faqs
+    - booking
     #- speakers
     # - schedule
     - sponsors
@@ -33,6 +35,8 @@ params:
   Titles:
     about: "About"
     location: "Location"
+    faqs: "FAQs"
+    booking: "Booking"
     speakers: "Speakers"
     schedule: "Schedule"
     sponsors: "Sponsors"
@@ -42,8 +46,8 @@ params:
   # The Call To Action button at the header,
   # If you don't want this, just remove the callToAction property.
   CallToAction:
-    text: "Register now!"
-    link: "http://register.example.com"
+    text: "Book now!"
+    link: "#booking"
 
   # Fork me on GitHub, if you don't want this, just remove the forkButton property
   #ForkButton:
@@ -51,17 +55,9 @@ params:
 
   # List of Sponsors
   Sponsors:
-    - name: "Hugo"
+    - name: "New Forest Health and Leisure"
       logo: "/img/healthAndLeisure.png"
-      url: "http://gohugo.io"
-  Sponsors:
-    - name: "Hugo"
-      logo: "/img/healthAndLeisure.png"
-      url: "http://gohugo.io"
-  Sponsors:
-    - name: "Hugo"
-      logo: "/img/healthAndLeisure.png"
-      url: "http://gohugo.io"
+      url: "http://www.newforest.gov.uk/healthandleisure/"
 
   # List of Partners
   Partners:
@@ -73,6 +69,7 @@ params:
       url: "http://www.newforest.gov.uk/healthandleisure/"
 
   # The entire schedule
+  # Craig  -  We are not using these but it is worth keeping incase we want to use/ modify them 
   Schedule:
     - name: "Check-in / Breakfast"
       time: "9h00"

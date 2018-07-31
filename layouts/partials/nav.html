@@ -1,13 +1,15 @@
 <nav id="nav">
-  <ul class="wrapper">
-    {{ range $section := $.Site.Params.Sections }}
-      <li class="nav-item">
-        <a href="#{{ $section }}" target="_blank" title="{{ index $.Site.Params.Titles $section }}" class="nav-link">
-          {{ index $.Site.Params.Titles $section }}
-        </a>
-      </li>
-    {{ end }}
-  </ul>
+  <div class="wrapper">
+    <ul>
+      {{ range $section := $.Site.Params.Sections }}
+        <li class="nav-item">
+          <a href="#{{ $section }}" target="_blank" title="{{ index $.Site.Params.Titles $section }}" class="nav-link">
+              {{ index $.Site.Params.Titles $section }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+    <img  id="brand" src="../img/Santa-Run-300x257.jpg" height="50"/>
+  </div>
 </nav>
-
 <hr>
