@@ -25,11 +25,11 @@ params:
     - location
     - faqs
     - booking
-    #- speakers
-    # - schedule
+    #- schedule
     - sponsors
-    - partners
-    #- contact
+    # - partners
+    # - contact
+    # - speakers
 
   # Titles which you can translate to other languages
   Titles:
@@ -55,15 +55,15 @@ params:
 
   # List of Sponsors
   Sponsors:
+    - name: "5th Testwood Scouts"
+      logo: "/img/Logos/Scouts_Logo_Stack_Purple.jpg"
+      url: "http://testwoodscouts.x10host.com/"
     - name: "New Forest Health and Leisure"
       logo: "/img/healthAndLeisure.png"
       url: "http://www.newforest.gov.uk/healthandleisure/"
 
   # List of Partners
   Partners:
-    - name: "5th Testwood Scouts"
-      logo: "/img/Logos/Scouts_Logo_Stack_Purple.jpg"
-      url: "http://testwoodscouts.x10host.com/"
     - name: "New Forest Health and Leisure"
       logo: "/img/healthAndLeisure.png"
       url: "http://www.newforest.gov.uk/healthandleisure/"
@@ -75,7 +75,7 @@ params:
       time: "9h00"
 
     - name: "Linus Torvalds"
-      photo: "/img/speaker.jpg"
+      #photo: "/img/speaker.jpg"
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
       company: "Linux Foundation"
       link:
@@ -87,7 +87,7 @@ params:
         time: "10h00"
 
     - name: "Bill Gates"
-      photo: "/img/speaker.jpg"
+      #photo: "/img/speaker.jpg"
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
       company: "Microsoft"
       link:
