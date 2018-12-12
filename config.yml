@@ -9,12 +9,12 @@ params:
   # Conference info
   Name: "Totton Santa Run"
   Description: "A family friendly, Yuletide themed Fun Run with indoor near the line Fayre for runners and spectator enjoyment"
-  Date: "9th December"
+  Date: ""
   Price: "Only:  Child £6, Adult £12, or Family £32 (two adults / two children)\n" # If your event is free, just comment this line
-  Venue: "Empire Hall Totton"
-  Address: "2 Salisbury Rd"
-  City:  "Totton"
-  State: "Southampton"
+  Venue: ""
+  Address: ""
+  City:  ""
+  State: ""
   Images: ["/img/runnerBacks.jpg"]
   GoogleMapsKey: "AIzaSyC6kc8cXGr1lkZdzKtCDivK2Oy0bJMTrIg"
 
