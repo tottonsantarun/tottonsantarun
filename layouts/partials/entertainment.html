@@ -1,0 +1,11 @@
+<h2 class="section-title">{{ .titles.entertainment }}</h2>
+
+<ul class="sponsor-list">
+{{ range $entertain := .entertainment }}
+  <li class="sponsor-item" itemscope itemtype="http://schema.org/Organization">
+    <a href="{{ .url }}" class="entertain--link" itemprop="url" target="_blank">
+      <img src="{{ .logo }}" alt="{{ .name }}" class="photo" itemprop="image">
+    </a>
+  </li>
+{{ end }}
+</ul>

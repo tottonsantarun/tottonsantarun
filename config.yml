@@ -24,8 +24,10 @@ params:
     - about
     - location
     - faqs
-    - booking
-    #- schedule
+      #    - booking
+    - schedule
+    - entertainment
+    - rules
     - sponsors
     # - partners
     # - contact
@@ -36,18 +38,20 @@ params:
     about: "About"
     location: "Location"
     faqs: "FAQs"
-    booking: "Booking"
-    speakers: "Speakers"
+    # booking: "Booking"
+    #speakers: "Speakers"
     schedule: "Schedule"
+    entertainment: "Choirs"
+    rules: "Cake off rules"
     sponsors: "Sponsors"
-    partners: "Partners"
-    contact: "Contact"
+    #partners: "Partners"
+    #contact: "Contact"
 
   # The Call To Action button at the header,
   # If you don't want this, just remove the callToAction property.
-  CallToAction:
-    text: "Book now!"
-    link: "#booking"
+  #  CallToAction:
+  #  text: "Book now!"
+  # link: "#booking"
 
   # Fork me on GitHub, if you don't want this, just remove the forkButton property
   #ForkButton:
@@ -67,7 +71,7 @@ params:
       logo: "/img/ElectraCareSq.jpg"
       url: "http://electracare.net/"
 
-    - name: "longman and Sons"
+    - name: "Longman and Sons"
       logo: "/img/LongmanScoutsWebAdvertSq.jpg"
       url: "http://longmanandsons.com/"
 
@@ -75,10 +79,36 @@ params:
       logo: "/img/foxMoveingSq.jpg"
       url: "https://www.fox-moving.com/"
 
+    - name: "Fast Forward Fitcamp"
+      logo: "/img/fitcamp.jpg"
+      url: "http://www.fastforward-fitcamp.co.uk/"
+
     - name: "Seadown Vets"
       logo: "/img/seadownVetsSq.png"
       url: "https://www.seadownvets.co.uk/"
 
+    - name: "Boogie Bounce"
+      logo: "/img/boogiebounce.jpg"
+      url: "http://www.boogiebounce.com/cadnam-southampton-so40"
+
+    - name: "Haydon Tyres"
+      logo: "/img/haydon.png"
+      url: "https://www.haydontyresandgarageservices.co.uk/"
+
+    - name: "Jollyes Pet Superstore"
+      logo: "/img/Jollyes.jpg"
+      url: "https://www.jollyes.co.uk/totton"
+
+  # List of Entertainment
+  Entertainment:
+    - name: "Ocean Harmony Chior"
+      logo: "/img/oceanharmony.png"
+      url: "https://oceanharmony.co.uk/"
+
+    - name: "ROVERANG Alumni Choir"
+      logo: "/img/roverang.png"
+      url: "https://www.youtube.com/channel/UCEoklcNZwmTW0zBoWgTZChg"
+  
   # List of Partners
   Partners:
     - name: "New Forest Health and Leisure"
@@ -86,85 +116,77 @@ params:
       url: "http://www.newforest.gov.uk/healthandleisure/"
 
   # The entire schedule
+  # 09:00 Runners only (Santacise with Boogie Bounce Southampton
+  # 09:30 Christmas Fayre doors open / start of Santa Run
+  # 10:00 Ocean Harmony Barbershop chorus performance
+  # 11:00 Roverang Alumni Choir Performance
+  # 11am -12pm Santa Selfies: get a picture of yourself with the big man himself
+  # 12pm Mince Pie eating Competition
+  # 12:10 Result of The Great Totton Cake Off
+  # 12:30 The raffle is drawn (who will win this year’s hamper?)
+  # 1:30 the Fayre closes
   # Craig  -  We are not using these but it is worth keeping incase we want to use/ modify them 
   Schedule:
-    - name: "Check-in / Breakfast"
-      time: "9h00"
-
-    - name: "Linus Torvalds"
-      #photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Linux Foundation"
+    - name: "Santacise with Boogie Bounce Southampton"
+      photo: "/img/boogiebounce.jpg"
+      bio: "For runners only - a warm up excercises from Boogie Bounce!"
+      company: "Boogie Bounce"
       link:
-        href: "http://twitter.com/linus"
-        text: "@linus"
+        href: "http://www.boogiebounce.com/cadnam-southampton-so40"
+        text: "Boogie Bounce"
       presentation:
-        title: "Digging into a Linux Kernel"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+        title: "Santacise"
+        description: "For runners only - a warm excercise from Boogie Bounce!"
+        time: "9h00"
+    - name: "Run starts and Christmas Fayre doors open"
+      bio: "For runners only - a warm excercise from Boogie Bounce!"
+      presentation:
+        title: "Run starts and Christmas Fayre opens"
+        description: "If you are running then go...\n
+        ...If not then browse"
+        time: "9h30"
+    - name: "Santacise with Boogie Bounce Southampton"
+      photo: "/img/oceanharmony.png"
+      bio: "Ocean Harmony's Barbershop chorus performance"
+      company: "Ocean Harmony"
+      link:
+        href: "https://oceanharmony.co.uk/"
+        text: "Ocean Harmony"
+      presentation:
+        title: "Ocean Harmony"
+        description: "Ocean Harmony's Barbershop chorus performance"
         time: "10h00"
-
-    - name: "Bill Gates"
-      #photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Microsoft"
-      link:
-        href: "http://github.com/billy95"
-        text: "@billy95"
+    - name: "Roverang Alumni Choir"
+      photo: "/img/roverang.png"
+      bio: "Roverang Alumni Choir Performance"
       presentation:
-        title: "Introducing Windows 12"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+        title: "Roverang Alumni Choir"
+        description: "Choir performance"
         time: "11h00"
-
-    - name: "Lunch"
-      time: "12h00"
-
-    - name: "Chuck Norris"
-      photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Delta Command"
-      link:
-        href: "http://twitter.com/littlechuck"
-        text: "@littlechuck"
+    - name: "Santa Selfies"
       presentation:
-        title: "How to kill a elephant with one finger"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-        time: "13h00"
-
-    - name: "Steve Jobs"
-      photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Apple, Inc."
-      link:
-        href: "http://github.com/stevie"
-        text: "@stevie"
+        title: "Santa Selfies"
+        description: "Get a picture of yourself with the big man himself!"
+        time: "11h00"
+    - name: "Mince Pie eating Competition"
+      bio: "Mince Pie eating Competition"
       presentation:
-        title: "Presenting iPad"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-        time: "14h00"
-
-    - name: "Coffee-break"
-      time: "15h00"
-
-    - name: "Mark Zuckerberg"
-      photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Facebook"
+        title: "Mince Pie eating Competition"
+        description: "Mince Pie eating Competition"
+        time: "12h00"
+    - name: "Result of The Great Totton Cake Off"
+      photo: "/img/cakeoff18.png"
+      bio: "Result of The Great Totton Cake Off"
       link:
-        href: "http://twitter.com/zuck"
-        text: "@zuck"
+        href: "http://www.boogiebounce.com/cadnam-southampton-so40"
+        text: "Result of The Great Totton Cake Off"
       presentation:
-        title: "Revealing Facebook Secrets"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-        time: "16h00"
-
-    - name: "Steve Wozniak"
-      photo: "/img/speaker.jpg"
-      bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      company: "Apple, Inc."
-      link:
-        href: "http://twitter.com/woz"
-        text: "@woz"
+        title: "Result of The Great Totton Cake Off"
+        description: "Result of The Great Totton Cake Off"
+        time: "12h10"
+  # 12:30 The raffle is drawn (who will win this year’s hamper?)
+    - name: "The raffle draw - who will win this years hamper?"
       presentation:
-        title: "Why do I prefer Android over iPhone"
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-        time: "17h00"
+        title: "The raffle draw - who will win this years hamper?"
+        description: "The raffle draw - who will win this years hamper?"
+        time: "12h30"
