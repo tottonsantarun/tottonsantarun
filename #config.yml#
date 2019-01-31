@@ -9,6 +9,15 @@ params:
   # Conference info
   Name: "Totton Santa Run"
   Description: "Please come back in the Summer for details of the 2019 Events - If you are interested in sponsoring this years event then please email us on tottonsantarun@gmail.com"
+  #Description: "A family friendly, Yuletide themed Fun Run with indoor near the line Fayre for runners and spectator enjoyment"
+  #Date: ""
+  #Price: "Only:  Child £6, Adult £12, or Family £32 (two adults / two children)\n" # If your event is free, just comment this line
+  #Venue: ""
+  #Address: ""
+  #City:  ""
+  #State: ""
+  #Images: ["/img/runnerBacks.jpg"]
+  #GoogleMapsKey: ""
 
   # Active sections on the website to deactivate comment out with '#'
   # you can also change order here and it will reflect on page
@@ -27,8 +36,8 @@ params:
 
   # Titles which you can translate to other languages
   Titles:
-    about: "About 2019's event"
-    location : "Location"
+    about: "Hi"
+    location: "Location"
     faqs: "FAQs"
     # booking: "Booking"
     #speakers: "Speakers"
